@@ -20,6 +20,7 @@
     <spring-boot.version>2.3.9.RELEASE</spring-boot.version>
     <seata.version>1.6.1-pms</seata.version>
     <postgresql.version>42.5.1</postgresql.version>
+    <ojdbc8.version>21.8.0.0</ojdbc8.version>
     <nacos.version>2.1.0</nacos.version>
   </properties>
 
@@ -52,7 +53,11 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>${postgresql.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.database.jdbc</groupId>
+      <artifactId>ojdbc8</artifactId>
+      <version>${ojdbc8.version}</version>
     </dependency>
     <dependency>
       <groupId>com.alibaba.nacos</groupId>
